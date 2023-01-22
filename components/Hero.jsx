@@ -6,7 +6,7 @@ const Hero = () => {
     <Fragment>
       <Navbar />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 mt-[2rem] p-4 gap-8 relative">
+      <div className="grid grid-cols-1 md:grid-cols-2 mt-[2rem] p-4 gap-8 relative max-w-6xl mx-auto">
         <div className="flex flex-col gap-4 items-center md:items-start">
           <p className="text-jellyBean text-center md:text-left uppercase text-[14px] md:text-[20px] font-bold">
             Best Destinations around the world
@@ -39,9 +39,9 @@ const Hero = () => {
               <div className="w-10 h-10 grid place-items-center rounded-full bg-jellyBean ">
                 <img src="/assets/play-icon.svg" alt="play icon" />
               </div>
-              <span className="font-g-sans-medium font-medium text-[#5E6282] text-lg">
+              <p className="font-g-sans-medium font-medium text-[#5E6282] text-[17px]">
                 Play Demo
-              </span>
+              </p>
             </button>
           </div>
         </div>

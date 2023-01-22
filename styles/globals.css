@@ -15,10 +15,11 @@
 }
 
 .font-g-sans {
-  font-family: "Product Sans", sans-serif;
+  font-family: "Product Sans", sans-serif !important;
 }
 .font-g-sans-medium {
-  font-family: "Product Sans", sans-serif;
+  font-family: "Product Sans", sans-serif !important;
+  @apply font-medium;
 }
 
 h1,
@@ -45,6 +46,6 @@ h1 {
 }
 
 h2 {
-  @apply text-[50px];
+  @apply text-[40px] md:text-[50px];
 }
 

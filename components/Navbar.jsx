@@ -12,14 +12,16 @@ const Navbar = () => {
 
         <div className="hidden md:flex items-center gap-4 lg:gap-[2rem]">
           {LINKS_ARR.map((item, index) => (
-            <div key={index} className="cursor-pointer nav-item text-[#212832]">
+            <Link href={"/"} key={index} className="nav-item text-[#212832]">
               {item}
-            </div>
+            </Link>
           ))}
         </div>
         <div className="flex items-center gap-4 lg:gap-[2rem]">
           <p className="nav-item">Login</p>
-          <button className="nav-item py-1 px-3 hover:text-white hover:bg-[#212832] border-2 rounded-md border-[#212832]">Sign up</button>
+          <button className="font-g-sans-medium text-[17px] font-medium transition-all py-1 px-3 text-white hover:text-[#212832] bg-[#212832] hover:bg-transparent border-2 rounded-md border-[#212832]">
+            Sign up
+          </button>
           <select className="nav-item cursor-pointer outline-none border-none bg-transparent">
             <option value="EN">EN</option>
             <option value="FR">FR</option>

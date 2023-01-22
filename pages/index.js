@@ -1,4 +1,4 @@
-import { Hero, Page } from "@/components";
+import { Hero, Page, Category } from "@/components";
 
 export default function Home() {
   return (
@@ -8,8 +8,9 @@ export default function Home() {
         alt="just a wave"
         className="absolute top-0 right-0"
       />
-      <div className="max-w-6xl mx-auto">
+      <div className="space-y-[3rem]">
         <Hero />
+        <Category />
       </div>
     </Page>
   );
