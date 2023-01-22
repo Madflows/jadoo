@@ -9,6 +9,7 @@ module.exports = {
       colors: {
         primary: "#14183E",
         jellyBean: "#DF6951",
+        orange: "#F1A501",
       },
     },
   },

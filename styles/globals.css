@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 * {
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
@@ -10,6 +9,42 @@
   padding: 0;
 }
 
-h1, h2, h3, h4,h5,h6 {
-  font-family: 'Volkhov', sans-serif;
+.nav-item {
+  font-family: "Product Sans Medium", sans-serif;
+  @apply font-medium text-[#212832] hover:text-[#212832b9] transition-all text-[17px];
 }
+
+.font-g-sans {
+  font-family: "Product Sans", sans-serif;
+}
+.font-g-sans-medium {
+  font-family: "Product Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Volkhov", sans-serif;
+  @apply text-primary;
+  font-weight: bold;
+}
+
+h1 span {
+  font-family: "Volkhov", sans-serif;
+}
+
+.font-h1 {
+  @apply text-[84px] leading-[89px] tracking-[-0.04em];
+}
+
+h1 {
+  @apply text-[55px] leading-[59px] text-center md:text-left md:text-[84px] md:leading-[89px] tracking-[-0.04em];
+}
+
+h2 {
+  @apply text-[50px];
+}
+
