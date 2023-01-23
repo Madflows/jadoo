@@ -10,6 +10,7 @@ module.exports = {
         primary: "#14183E",
         jellyBean: "#DF6951",
         orange: "#F1A501",
+        lightGray: "#5E6282",
       },
     },
   },

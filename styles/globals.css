@@ -9,6 +9,10 @@
   padding: 0;
 }
 
+::selection {
+  @apply bg-[#FFF1DA];
+}
+
 .nav-item {
   font-family: "Product Sans Medium", sans-serif;
   @apply font-medium text-[#212832] hover:text-[#212832b9] transition-all text-[17px];

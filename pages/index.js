@@ -1,4 +1,4 @@
-import { Hero, Page, Category } from "@/components";
+import { Hero, Page, Category, TopSelling } from "@/components";
 
 export default function Home() {
   return (
@@ -11,6 +11,7 @@ export default function Home() {
       <div className="space-y-[3rem]">
         <Hero />
         <Category />
+        <TopSelling />
       </div>
     </Page>
   );
