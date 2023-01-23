@@ -23,18 +23,20 @@ const STEPS_ARR = [
 const BookingSteps = () => {
   return (
     <section className="py-10 p-4 md:p-0">
-      <div className="max-w-6xl p-4 mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div className="flex flex-col items-start gap-4">
-          <p className="font-semibold text-lg text-lightGray">Easy and Fast</p>
-          <h2>
+      <div className="max-w-6xl p-4 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="flex flex-col items-center lg:items-start gap-4">
+          <p className="font-semibold text-lg text-center lg:text-left text-lightGray">
+            Easy and Fast
+          </p>
+          <h2 className="text-center lg:text-left">
             Book Your Next Trip
-            <br />
+            <br className="hidden md:block" />{" "}
             In 3 Easy Steps
           </h2>
 
           <div className="flex flex-col gap-8 items-start">
             {STEPS_ARR.map((step, index) => (
-                <Step key={index} index={index} step={step} />
+              <Step key={index} index={index} step={step} />
             ))}
           </div>
         </div>
