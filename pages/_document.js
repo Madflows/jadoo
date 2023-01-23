@@ -23,6 +23,7 @@ export default function Document() {
           href="/assets/favicon.png"
           type="image/x-icon"
         />
+        <script src="/assets/scripts/gsap.min.js"></script>
       </Head>
       <body>
         <Main />

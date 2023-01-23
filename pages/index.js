@@ -1,4 +1,4 @@
-import { Hero, Page, Category, TopSelling } from "@/components";
+import { Hero, Page, Category, TopSelling, BookingSteps } from "@/components";
 
 export default function Home() {
   return (
@@ -12,6 +12,7 @@ export default function Home() {
         <Hero />
         <Category />
         <TopSelling />
+        <BookingSteps />
       </div>
     </Page>
   );

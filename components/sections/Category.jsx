@@ -28,7 +28,7 @@ const SERVICES_ARR = [
 
 const Category = () => {
   return (
-    <section className='relative p-4'>
+    <section className='relative p-4 md:p-0'>
         <img src="/assets/glitter.svg" alt="glitter" className='absolute top-0 right-4 md:right-12' />
         <div className='max-w-6xl mx-auto'>
             <Heading title={"We offer best services"} subtitle="category" />
