@@ -5,6 +5,7 @@ import {
   TopSelling,
   BookingSteps,
   Sponsors,
+  Subscribe
 } from "@/components";
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
         <TopSelling />
         <BookingSteps />
         <Sponsors />
+        <Subscribe />
       </div>
     </Page>
   );

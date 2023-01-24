@@ -12,3 +12,4 @@ export { default as Category } from "./sections/Category";
 export { default as TopSelling } from "./sections/TopSelling";
 export { default as BookingSteps } from "./sections/BookingSteps";
 export { default as Sponsors } from "./sections/Sponsors";
+export { default as Subscribe } from "./sections/Subscribe";
