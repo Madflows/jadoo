@@ -50,7 +50,7 @@ const FOOTER_LINKS = [
 export  const Footer = () => {
   return (
     <footer className="py-10 p-4 pt-[5rem]">
-      <div className="max-w-6xl mx-auto flex flex-wrap gap-4 items-start justify-between">
+      <div className="max-w-6xl mx-auto gap-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5">
         <div className="flex flex-col items-start gap-8">
           <h4 className="text-primary leading-none font-medium text-[44px]">
             Jadoo.
