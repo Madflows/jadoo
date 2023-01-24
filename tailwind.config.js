@@ -12,6 +12,10 @@ module.exports = {
         orange: "#F1A501",
         lightGray: "#5E6282",
       },
+      backgroundImage: {
+        blueGradient:
+          "linear-gradient(201.65deg, #747DEF 10.27%, #5E3BE1 100%)",
+      },
     },
   },
   plugins: [],

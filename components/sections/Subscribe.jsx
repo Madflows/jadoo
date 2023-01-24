@@ -2,13 +2,19 @@ import React from "react";
 
 const Subscribe = () => {
   return (
-    <section>
+    <section className="relative py-[5rem] px-4">
+      <div className="absolute -bottom-[5rem] right-4 md:right-12 ">
+        <img src="/assets/glitter-down.svg" alt="glitter" />
+      </div>
       <div
         style={{
           background: "url(/assets/conespring.png) repeat #F6F3FD",
         }}
-        className="max-w-6xl mx-auto rounded-[20px] py-[40px] md:py-[60px] md:rounded-tl-[129px] p-4 flex flex-col gap-8 items-center"
+        className="max-w-6xl mx-auto relative rounded-[20px] py-[40px] md:py-[60px] md:rounded-tl-[129px] p-4 flex flex-col gap-[3rem] items-center"
       >
+        <div className="w-[70px] h-[70px] rounded-full bg-blueGradient place-items-center absolute -top-[25px] -right-[25px] hidden md:grid">
+          <img src="/assets/icons/send-icon.svg" alt="oi" />
+        </div>
         <h4 className="text-[20px] sm:text-[33px] text-lightGray sm:leading-[55px] font-semibold text-center max-w-3xl">
           Subscribe to get information, latest news and other interesting offers
           about Jadoo
