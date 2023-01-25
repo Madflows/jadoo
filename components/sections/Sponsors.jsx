@@ -33,6 +33,7 @@ const Sponsors = () => {
           <motion.div
             drag="y"
             dragConstraints={{ top: 0, bottom: 10 }}
+            dragPropagation
             className="grayscale cursor-pointer transition-all duration-300 hover:grayscale-0 grid place-items-center"
             key={index}
           >

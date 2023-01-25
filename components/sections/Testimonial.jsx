@@ -40,12 +40,24 @@ const Testimonial = () => {
           </div>
 
           <div className="flex w-fit md:w-full mx-auto items-center mt-[3rem] gap-[26px]">
-            <StepBtn step={1} activeStep={activeTestimony} setStep={setActiveTestimony} />
-            <StepBtn step={2} activeStep={activeTestimony} setStep={setActiveTestimony} />
-            <StepBtn step={3} activeStep={activeTestimony} setStep={setActiveTestimony} />
+            <StepBtn
+              step={1}
+              activeStep={activeTestimony}
+              setStep={setActiveTestimony}
+            />
+            <StepBtn
+              step={2}
+              activeStep={activeTestimony}
+              setStep={setActiveTestimony}
+            />
+            <StepBtn
+              step={3}
+              activeStep={activeTestimony}
+              setStep={setActiveTestimony}
+            />
           </div>
         </div>
-        <div className="flex flex-col md:flex-row gap-[3rem]">
+        <div className="flex flex-col md:flex-row items-baseline gap-[3rem]">
           <div className="w-full max-w-lg relative">
             {TESTIMONIES.map((testimony, index) => (
               <TestimonyCard
@@ -56,29 +68,31 @@ const Testimonial = () => {
               />
             ))}
           </div>
-          <div className="hidden md:grid grid-cols-1 mx-[2rem] h-[200px]">
-            <button
-              onClick={() => {
-                setActiveTestimony(
-                  activeTestimony != 3 ? activeTestimony + 1 : 1
-                );
-              }}
-              disabled={activeTestimony == 3}
-              className="text-lg disabled:opacity-50 disabled:cursor-not-allowed text-primary"
-            >
-              <FaChevronUp />
-            </button>
-            <button
-              onClick={() => {
-                setActiveTestimony(
-                  activeTestimony != 1 ? activeTestimony - 1 : 3
-                );
-              }}
-              disabled={activeTestimony == 1}
-              className="text-lg disabled:opacity-50 disabled:cursor-not-allowed text-primary"
-            >
-              <FaChevronDown />
-            </button>
+          <div className="flex items-end relative">
+            <div className="grid grid-cols-2 md:grid-cols-1  mx-[2rem] h-[200px]">
+              <button
+                onClick={() => {
+                  setActiveTestimony(
+                    activeTestimony != 3 ? activeTestimony + 1 : 1
+                  );
+                }}
+                disabled={activeTestimony == 3}
+                className="text-lg focus:ring-2 focus:ring-offset-2 ring-slate-400 transition bg-slate-100 h-10 w-10 rounded-full flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed text-primary"
+              >
+                <FaChevronUp />
+              </button>
+              <button
+                onClick={() => {
+                  setActiveTestimony(
+                    activeTestimony != 1 ? activeTestimony - 1 : 3
+                  );
+                }}
+                disabled={activeTestimony == 1}
+                className="text-lg focus:ring-2 focus:ring-offset-2 ring-slate-400 bg-slate-100 h-10 w-10 rounded-full flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed text-primary"
+              >
+                <FaChevronDown />
+              </button>
+            </div>
           </div>
         </div>
       </div>
