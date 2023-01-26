@@ -4,6 +4,9 @@ import Head from 'next/head';
 import AOS from 'aos';
 import { useEffect } from 'react';
 
+import "aos/dist/aos.css";
+
+
 export default function App({ Component, pageProps }) {
   useEffect(() => {
     AOS.init({

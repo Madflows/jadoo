@@ -1,6 +1,7 @@
 import React from 'react'
 import ServicesCard from '../cards/ServicesCard';
 import Heading from '../Heading'
+import Parallax from '../wrappers/Parallax';
 
 const SERVICES_ARR = [
   {
@@ -29,7 +30,10 @@ const SERVICES_ARR = [
 const Category = () => {
   return (
     <section className='relative p-4 md:p-0'>
+        <Parallax>
         <img src="/assets/glitter.svg" alt="glitter" className='absolute top-0 right-4 md:right-12' />
+
+        </Parallax>
         <div className='max-w-6xl mx-auto'>
             <Heading title={"We offer best services"} subtitle="category" />
         <div className='grid grid-cols-1  gap-6 md:grid-cols-2 xl:grid-cols-4'>

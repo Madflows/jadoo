@@ -1,11 +1,17 @@
 import React from "react";
 
+import { useScroll, useTransform, motion } from "framer-motion";
+import Parallax from "../wrappers/Parallax";
+
 const Subscribe = () => {
   return (
     <section className="relative py-[5rem] px-4">
-      <div className="absolute -bottom-[5rem] right-4 md:right-12 ">
+      <Parallax>
+      <motion.div className="absolute -bottom-[5rem] right-4 md:right-12 ">
         <img src="/assets/glitter-down.svg" alt="glitter" />
-      </div>
+      </motion.div>
+
+      </Parallax>
       <div
         style={{
           background: "url(/assets/conespring.png) repeat #F6F3FD",

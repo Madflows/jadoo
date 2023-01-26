@@ -30,7 +30,7 @@ const Testimonial = () => {
   return (
     <section className="px-4 md:px-10">
       <div className="max-w-6xl pb-[350px] lg:pb-[200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <div className="flex flex-col items-start justify-between gap-4">
+        <div data-aos="fade-right" className="flex flex-col items-start justify-between gap-4">
           <div className="w-full flex flex-col">
             <p className="uppercase mx-auto lg:mx-0 font-semibold text-lg text-lightGray">
               Testimonials
@@ -58,8 +58,8 @@ const Testimonial = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col md:flex-row items-baseline gap-[3rem]">
-          <div className="w-full max-w-lg relative">
+        <div data-aos="fade-left" className="flex flex-col md:flex-row items-baseline gap-[2rem]">
+          <div className="w-full max-w-md relative">
             {TESTIMONIES.map((testimony, index) => (
               <TestimonyCard
                 key={index}
@@ -162,9 +162,13 @@ function TestimonyCard({ testimony, activeTestimony, step }) {
           ${status == "inactive" && "border-2 hidden md:flex border-[#F7F7F7]"} 
           flex flex-col gap-8`}
         >
-          <p className="text-lightGray">{testimony.body}</p>
+          <p className="text-lightGray font-medium leading-[32px] text-[16px]">{testimony.body}</p>
           <div className="flex flex-col gap-2  w-fit">
-            <RoughNotation type="underline" show={status == "active"}>
+            <RoughNotation
+              type="underline"
+              color="#F6F3FD"
+              show={status == "active"}
+            >
               <h5 className="font-semibold text-lightGray">{testimony.name}</h5>
             </RoughNotation>
             <p className="text-sm text-lightGray">{testimony.position}</p>
