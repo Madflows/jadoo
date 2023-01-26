@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import { motion, AnimatePresence } from "framer-motion";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { RoughNotation } from "react-rough-notation";
 
 const TESTIMONIES = [
   {
@@ -157,18 +158,16 @@ function TestimonyCard({ testimony, activeTestimony, step }) {
         />
         <div
           className={`bg-white py-7 px-6 pt-[4rem] rounded-[10px] 
-          ${
-            status == "active" && "shadow-testimonial"
-          } 
-          ${
-            status == "inactive" && "border-2 hidden md:flex border-[#F7F7F7]"
-          } 
+          ${status == "active" && "shadow-testimonial"} 
+          ${status == "inactive" && "border-2 hidden md:flex border-[#F7F7F7]"} 
           flex flex-col gap-8`}
         >
           <p className="text-lightGray">{testimony.body}</p>
-          <div className="flex flex-col gap-1 text-lightGray">
-            <h5 className="font-semibold">{testimony.name}</h5>
-            <p className="text-sm">{testimony.position}</p>
+          <div className="flex flex-col gap-2  w-fit">
+            <RoughNotation type="underline" show={status == "active"}>
+              <h5 className="font-semibold text-lightGray">{testimony.name}</h5>
+            </RoughNotation>
+            <p className="text-sm text-lightGray">{testimony.position}</p>
           </div>
         </div>
       </motion.article>
