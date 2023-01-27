@@ -31,7 +31,7 @@ const Category = () => {
   return (
     <section className='relative p-4 md:p-0'>
         <Parallax>
-        <img src="/assets/glitter.svg" alt="glitter" className='absolute top-0 right-4 md:right-12' />
+        <img src="/assets/glitter.svg" alt="glitter" className='invisible lg:visible absolute top-0 right-4 md:right-12' />
 
         </Parallax>
         <div className='max-w-6xl mx-auto'>

@@ -7,7 +7,7 @@ const Subscribe = () => {
   return (
     <section className="relative py-[5rem] px-4">
       <Parallax>
-      <motion.div className="absolute -bottom-[5rem] right-4 md:right-12 ">
+      <motion.div className="absolute invisible lg:visible -bottom-[5rem] right-4 md:right-12 ">
         <img src="/assets/glitter-down.svg" alt="glitter" />
       </motion.div>
 
