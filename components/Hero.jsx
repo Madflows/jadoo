@@ -6,7 +6,7 @@ const Hero = () => {
     <Fragment>
       <Navbar />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 mt-[2rem] p-4 gap-8 relative max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 mt-[2rem] p-4 gap-8 relative max-w-6xl xl:max-w-8xl mx-auto">
         <div data-aos={"fade-right"} className="flex flex-col gap-4 items-center md:items-start">
           <p className="text-jellyBean text-center md:text-left uppercase text-[14px] md:text-[20px] font-bold">
             Best Destinations around the world

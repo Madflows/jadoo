@@ -23,7 +23,7 @@ const STEPS_ARR = [
 const BookingSteps = () => {
   return (
     <section className="py-10 p-4 md:p-0">
-      <div className="max-w-6xl p-4 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div className="max-w-6xl xl:max-w-8xl p-4 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div className="flex flex-col items-center lg:items-start gap-4">
           <p className="font-semibold text-lg text-center lg:text-left text-lightGray">
             Easy and Fast

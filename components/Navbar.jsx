@@ -5,7 +5,7 @@ const LINKS_ARR = ["Destinations", "Hotels", "Flights", "Bookings"]
 const Navbar = () => {
   return (
     <nav className="w-full p-4 py-6 relative">
-      <div className="max-w-6xl flex items-center justify-between mx-auto">
+      <div className="max-w-6xl xl:max-w-8xl flex items-center justify-between mx-auto">
         <Link href="/">
           <img src="/assets/logo.svg" width={100} height={30} alt="Jadoo" />
         </Link>

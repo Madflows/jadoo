@@ -16,7 +16,7 @@ const Subscribe = () => {
         style={{
           background: "url(/assets/conespring.png) repeat #F6F3FD",
         }}
-        className="max-w-6xl mx-auto relative rounded-[20px] py-[40px] md:py-[60px] md:rounded-tl-[129px] p-4 flex flex-col gap-[3rem] items-center"
+        className="max-w-6xl xl:max-w-8xl mx-auto relative rounded-[20px] py-[40px] md:py-[60px] md:rounded-tl-[129px] p-4 flex flex-col gap-[3rem] items-center"
       >
         <div className="w-[70px] h-[70px] rounded-full bg-blueGradient place-items-center absolute -top-[25px] -right-[25px] hidden md:grid">
           <img src="/assets/icons/send-icon.svg" alt="oi" />

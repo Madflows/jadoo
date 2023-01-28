@@ -28,7 +28,7 @@ const COMPANIES = [
 const Sponsors = () => {
   return (
     <section className="py-10">
-      <div className="max-w-6xl gap-4 p-4 md:p-0 mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+      <div className="max-w-6xl xl:max-w-8xl gap-4 p-4 md:p-0 mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
         {COMPANIES.map((company, index) => (
           <motion.div
             drag="y"

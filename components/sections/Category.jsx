@@ -34,7 +34,7 @@ const Category = () => {
         <img src="/assets/glitter.svg" alt="glitter" className='invisible lg:visible absolute top-0 right-4 md:right-12' />
 
         </Parallax>
-        <div className='max-w-6xl mx-auto'>
+        <div className='max-w-6xl xl:max-w-8xl mx-auto'>
             <Heading title={"We offer best services"} subtitle="category" />
         <div className='grid grid-cols-1  gap-6 md:grid-cols-2 xl:grid-cols-4'>
             {SERVICES_ARR.map((service, index) => (

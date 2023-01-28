@@ -29,7 +29,7 @@ const Testimonial = () => {
   const [activeTestimony, setActiveTestimony] = useState(3);
   return (
     <section className="px-4 md:px-10">
-      <div className="max-w-6xl pb-[350px] lg:pb-[200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div className="max-w-6xl xl:max-w-8xl pb-[350px] lg:pb-[200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div data-aos="fade-right" className="flex flex-col items-start justify-between gap-4">
           <div className="w-full flex flex-col">
             <p className="uppercase mx-auto lg:mx-0 font-semibold text-lg text-lightGray">
